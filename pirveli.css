@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 40px;
+  }
+
+  .box {
+    width: 80px;
+    height: 80px;
+    background-color: blue;
+    margin: 10px;
+   animation-name:gamarjoba ;
+   animation-delay: 1s;
+   animation-duration: 2.5s;
+   animation-iteration-count: 208;
+   opacity: 1;
+
+  }
+
+  @keyframes gamarjoba {
+   from {transform: scale(1);}
+   to{transform: scale(1.5);}
+  }
+  @keyframes ease {
+   from {transform: scale(1);background-color: blue;}
+   to{transform: scale(1.5); background-color: brown;}
+  }
+  @keyframes linear {
+   from {transform: scale(1);background-color: blue;}
+   to{transform: scale(1.5); background-color: aquamarine;}
+  }
+  @keyframes ease-in {
+   from {transform: scale(1);background-color: blue;}
+   to{transform: scale(1.5);background-color: coral;}
+  }
+  @keyframes  ease-out { 
+   from {transform: scale(1);background-color: blue;}
+   to{transform: scale(1.5); background-color: crimson;}
+  }
+  @keyframes ease-in-out {
+   from {transform: scale(1);background-color: blue;}
+   to{transform: scale(1.5); background-color: black;}
+  }
+
+  .ease       { animation-timing-function: ease; animation-name: ease; }
+  .linear     { animation-timing-function: linear; animation-name: linear;}
+  .ease-in    { animation-timing-function: ease-in; animation-name: ease-in;}
+  .ease-out   { animation-timing-function: ease-out; animation-name: ease-out; }
+  .ease-in-out{ animation-timing-function: ease-in-out; animation-name: ease-in-out; }
+
+  .label {
+    font-weight: 900;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
